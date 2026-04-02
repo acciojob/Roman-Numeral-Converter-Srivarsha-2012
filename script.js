@@ -1,6 +1,8 @@
 function toRoman(num) {
-    if (num <= 0) return "";
+    // Handle 0 (most platforms expect empty string)
+    if (num === 0) return "";
 
+    // Roman numeral mapping
     const values = [
         1000, 900, 500, 400,
         100, 90, 50, 40,
